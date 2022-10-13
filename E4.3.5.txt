@@ -1,0 +1,27 @@
+class  Appliance{
+  constructor(name){
+  this.name = name,
+  this.type = "Electro"
+}
+
+  getPower = function (volt, amper, power) {
+  power = volt * amper
+  console.log(" Power is " + power + " Vt")
+}
+
+  swithOn = function (turn) {
+  if (turn == "on"){
+    console.log("Appliance is On");  }
+  else if (turn == "off"){
+    console.log("Appliance is Off");  }
+} 
+}
+  
+const comp = new Appliance("computer");
+const lamp = new Appliance("tablelamp");  
+
+//console.log(comp, lamp)
+
+//lamp.getPower(120, 50)
+
+//lamp.swithOn("off")
